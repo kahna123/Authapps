@@ -12,7 +12,7 @@ export default function StationLayout({ children }) {
     if (roleId === '6') {
       setIsAuthorized(true);
     } else {
-      router.push('/login');
+      router.push('/');
     }
   }, [router]);
 

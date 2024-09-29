@@ -12,7 +12,7 @@ export default function AdminLayout({ children }) {
     if (roleId === '5') {
       setIsAuthorized(true);
     } else {
-      router.push('/login');
+      router.push('/');
     }
   }, [router]);
 
