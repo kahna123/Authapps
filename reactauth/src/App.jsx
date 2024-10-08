@@ -6,6 +6,7 @@ import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
 import ProtectedRoute from './components/ProtectedRoute';
+import Errorpage from './pages/Errorpage';
 
 const App = () => {
   return (
@@ -44,6 +45,14 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+         <Route
+          path="*"
+          element={
+        <Errorpage/>
+          }
+        />
+
+
       </Routes>
     </Router>
   );
