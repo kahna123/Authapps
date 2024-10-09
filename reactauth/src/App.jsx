@@ -7,6 +7,7 @@ import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
 import ProtectedRoute from './components/ProtectedRoute';
 import Errorpage from './pages/Errorpage';
+import Progressindicator from './pages/ProgressIndicatior';
 
 const App = () => {
   return (
@@ -45,12 +46,25 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
+<Route
+          path="/Progress"
+          element={
+            <ProtectedRoute>
+        <Progressindicator/>
+            </ProtectedRoute>
+          }
+        />
+
          <Route
           path="*"
           element={
         <Errorpage/>
           }
         />
+
+
+
 
 
       </Routes>
